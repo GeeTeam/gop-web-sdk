@@ -1,0 +1,23 @@
+{
+  "name": "gop-web-sdk",
+  "version": "1.0.0",
+  "description": "onepass web sdk",
+  "main": "dist/gop.js",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "contributors": [
+    {
+      "name": "geetest",
+      "email": "service@geetest.com",
+      "url": "http://geetest.com"
+    }
+  ],
+  "repository": "https://github.com/GeeTeam/gop-web-sdk",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}

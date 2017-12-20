@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Onepas demo</title>
+    <style>
+        body { margin: 50px 0; text-align: center; font-family: "PingFangSC-Regular", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif; }
+        .inp { border: 1px solid #cccccc; border-radius: 2px; padding: 0 10px; width: 278px; height: 40px; font-size: 14px; }
+        .btn { display: inline-block; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 2px; width: 120px; height: 40px; line-height: 40px; font-size: 16px; color: #666; cursor: pointer; background: white linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%); }
+        .btn:hover { background: white linear-gradient(0deg, #ffffff 0%, #f3f3f3 100%) }
+        #captcha { width: 300px; display: inline-block; }
+        label { vertical-align: top; display: inline-block; width: 80px; text-align: right; }
+        #wait { text-align: left; color: #666; margin: 0; }
+        .txt_msg { width: 130px; }
+        .btn_msg { border: solid 1px #cccccc; border-radius: 2px; height: 44px; background: #0BD8D0; width: 122px; margin:0; color:#fff; font-size: 14px; -webkit-appearance: none;}
+        .btn_msg.disable { background:#cccccc; }
+        #loading {position: fixed;left: 0; top: 0; height: 100%; width: 100%; opacity: 0.6; background: #000;}
+        #loading img { width: 30px; margin: 50%; position: relative;}
+        #btnStep1, #btnStep2 { background: #0BD8D0; color:#ffffff; }
+            </style>    
+</head>
+<body>
+    <h1>注册</h1>
+    <div id="step1">
+        <h5 style="color:red;">请先关闭WIFI</h5>
+        <div>
+            <input id="phone" type="tel" class="inp" maxlength="11" placeholder="请输入手机号">        
+        </div>
+        <br/>
+        <div id="btnStep1" class="btn">下一步</div>
+    </div>
+    <div id="step2" style="display: none;">
+        <div>
+            <input id="txtmsg" type="tel" class="inp" maxlength="6" placeholder="请输入短信验证码">            
+        </div>
+        <br/>
+        <div id="btnStep2" class="btn">下一步</div>
+    </div>
+    <div id="step3" style="display: none;">
+        <h3>注册成功</h3>
+    </div>    
+    <div id="err_tip" style="position: fixed; bottom: 10%;left: 40%; text-align: center;display: none;">错误提示</div>
+    
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
