@@ -1,6 +1,6 @@
 {
   "name": "gop-web-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "onepass web sdk",
   "main": "dist/gop.js",
   "scripts": {
