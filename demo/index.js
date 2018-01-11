@@ -29,9 +29,9 @@ function showElement(ele){
 }
 function initOnepass(){
     var opInstance = new GOP({
-        custom: '1c613735335a7f47a3222c12f2522a49', //您申请的onepass ID
-        checkGatewayUrl:'http://www.geetest.com/demo/gt/check_gateway', // 您的check_gateway地址
-        checkMessageUrl:'http://www.geetest.com/demo/gt/check_message'  // 您的check_message地址
+        custom: '您申请的onepass ID',
+        checkGatewayUrl:'您的check_gateway地址',
+        checkMessageUrl:'您的check_message地址'
     });
     opInstance.onGatewaySuccess(function(){
         // 网关验证成功，finish                
