@@ -1,6 +1,6 @@
 极验onepass产品 web sdk
 
-###本产品只试用手机端，且用户开启数据网络功能可用， 不支持https
+###本产品只适用手机端，且用户开启数据网络功能可用， 不支持https
 
 ##Installation
 ```bash
